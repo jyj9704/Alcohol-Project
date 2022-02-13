@@ -1,0 +1,147 @@
+@charset "utf-8";
+.write-section{
+	margin-top:80px;
+	font-size:14px;
+	color:#666;
+}
+.write-bg{
+	height:68px;
+	background: url('../images/write-bg.jpg') center;
+	background-position:0 -260px;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.title-box{
+	margin-top:20px;
+	border:1px solid #d0d0d0;
+	height:40px;
+}
+.title-box h2{
+	margin-left:20px;
+	line-height:40px;
+	font-weight:700;
+	color:#333;
+}
+.write-section form{
+	margin-top:40px;
+}
+.write-list{
+	display:flex;
+	margin-bottom:20px;
+	align-items:center;
+}
+.write-list h5{
+	width:80px;
+	padding-left:12px;
+	font-weight:700;
+	font-size:inherit;
+}
+.write-list input[name="liquor"]{
+	margin:0;
+	display:none;
+}
+.write-list input[name="liquor"] + label{
+	margin-right:12px;
+	font-size:12px;
+	display:flex;
+	align-items:center;
+}
+label .circle{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	border:1px solid #d0d0d0;
+	margin-right:4px;
+	position:relative;
+	cursor:pointer;
+}
+label .circle-choice{
+	display:inline-block;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background-color:#d0d0d0;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	display:none;
+}
+.write-list input[name="liquor"]:checked + label .circle-choice{
+	display:inline-block;
+}
+.write-section input[id^="liquor"]{
+	border:1px solid #d0d0d0;
+	width:220px;
+	height:24px;
+	font-family:inherit;
+	font-size:inherit;
+	color:inherit;
+	padding-left:8px;
+}
+.write-section select{
+	border:1px solid #d0d0d0;
+	width:232px;
+	height:28px;
+	font-family:inherit;
+	font-size:12px;
+	color:inherit;
+	padding-left:8px;
+	appearance:none;
+	background:url('../images/select-arrow.png') no-repeat;
+	background-position:97% 9.5px;
+	outline:none;
+}
+.write-section input[type="file"]{
+	display:none;
+}
+.write-list label[for="liquor-pic"]{
+	display:inline-block;
+	width:80px;
+	height:24px;
+	border:1px solid #d0d0d0;
+	font-size:12px;
+	text-align:center;
+	line-height:24px;
+	cursor:pointer;
+}
+.file-result{
+	margin-left:8px;
+	font-size:12px;
+	color:#999;
+}
+.write-section textarea[name="memo"]{
+	width:calc(1200px - 92px);
+	height:228px;
+	resize:none;
+	border:1px solid #d0d0d0;
+	font-family:inherit;
+	font-size:inherit;
+	color:inherit;
+	outline:none;
+	padding-left:8px;
+}
+.write-section .button-box{
+	margin-top:24px;
+	display:flex;
+	justify-content:right;
+}
+.write-section .button-box button{
+	border:1px solid #d0d0d0;
+	font-family:inherit;
+	font-size:12px;
+	color:inherit;
+	outline:none;
+	width:80px;
+	height:28px;
+	margin-left:8px;
+	cursor:pointer;
+}
+
+
+
+
+

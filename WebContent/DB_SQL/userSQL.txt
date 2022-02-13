@@ -1,0 +1,20 @@
+create table abc_project.seller(
+sellerId varchar(20),
+orderNum int,
+product varchar(50),
+price int,
+orderVol int,
+buyerId varchar(20),
+buyerName varchar(10),
+buyerTell varchar(20),
+pickDate date
+);
+
+insert into abc_project.seller values('seller',1,'앱솔루트 보드카',30000,2,'buyer','구매자','010-0000-0000','2022-01-11');
+insert into abc_project.seller values('seller',2,'버팔로 트레이스위스키',50000,1,'buyer','구매자','010-0000-0000','2022-01-12');
+
+select * from abc_project.seller; 
+
+drop table abc_project.seller;
+
+commit;

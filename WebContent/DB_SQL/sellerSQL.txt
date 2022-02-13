@@ -1,0 +1,17 @@
+create table abc_project.seller(
+sellerId varchar(20),
+orderNum int,
+price int,
+orderVol int,
+buyerId varchar(20),
+buyerTell varchar(20),
+pickDate date
+);
+
+insert into abc_project.seller values('seller',1,30000,2,'buyer','010-0000-0000','2022-01-11');
+
+select * from abc_project.seller; 
+
+drop table abc_project.seller;
+
+commit;

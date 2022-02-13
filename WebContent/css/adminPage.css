@@ -1,0 +1,60 @@
+.sell-list{
+	margin-top:40px;
+	color:#777;
+}
+.date-choice{
+	display:flex;
+	justify-content:right;
+	align-items:center;
+	font-size:12px;
+}
+.date-choice span{
+	margin-right:8px;
+}
+.date-choice input{
+	width:120px;
+	height:20px;
+	border:1px solid #ccc;
+	padding-left:8px;
+	font-size:inherit;
+	color:inherit;
+}
+.sell-table{
+	margin-top:12px;
+	width:100%;
+}
+.sell-table caption{
+	width:0;
+	height:0;
+	font-size:0;
+}
+.sell-table,
+.sell-table tr,
+.sell-table td,
+.sell-table th{
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	font-size:12px;
+}
+.sell-table th, .sell-table td{
+	height:20px;
+	padding:0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.sell-table th:nth-child(2),
+.sell-table td:nth-child(2){
+	width:180px;
+}
+.sell-table th{
+	color:#fff;
+	background-color:#666;
+	font-weight:500;
+}
+.date-choice input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.sell-table td{
+	text-align:center;
+}

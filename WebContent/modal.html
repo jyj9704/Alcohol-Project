@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+	<div class="modal-bg modal-hide">
+	  	<div class="modal-box login modal-hide">
+	  		<h2>LOGIN</h2>
+	  		<form action="loginAction.jsp">
+	  			<div class="login-input">
+	  				<div class="write-input">
+	  					<label for="id">아이디</label>
+	  					<input type="text" autocomplete="off" id="id" name="id" required>
+	  				</div>
+	  				<div class="write-input">
+	  					<label for="password">비밀번호</label>
+	  					<input type="password" id="password" name="pw" required>
+	  				</div>
+	  			</div>
+	  			<button type="submit" class="login-btn">로그인</button>
+	  		</form>
+	  		<p>아직 아이디가 없으세요?<a href="javascript:void(0)" class="signup-go">회원가입</a></p>
+	  		<button type="button" class="close">CLOSE</button>
+	  	</div>
+	  	<div class="modal-box sign-up modal-hide">
+	  		<h2>SIGN UP</h2>
+	  		<form action="joinAction.jsp">
+	  			<ul>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-id">아이디</label></h5>
+	  					<input type="text" name="id" id="signUp-id" autocomplete="off" required>
+	  					<!-- <button>중복확인</button> -->
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-pw">비밀번호</label></h5>
+	  					<input type="password" name="pw" id="signUp-pw" required>
+	  					<span></span>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="re-pw">비밀번호 확인</label></h5>
+	  					<input type="password" name="pw_check" id="re-pw" required>
+	  					<span></span>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-name">이름</label></h5>
+	  					<input type="text" name="name" id="signUp-name" autocomplete="off" required>
+	  					<span></span>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-birth">생년월일</label></h5>
+	  					<input type="text" name="bDate" id="signUp-birth" autocomplete="off" placeholder="0000-00-00" required>
+	  					<span></span>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-email">이메일</label></h5>
+	  					<input type="email" name="email" id="signUp-email" autocomplete="off" required>
+	  					<button type="button">인증하기</button>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5><label for="signUp-tel">전화번호</label></h5>
+	  					<input type="tel" name="tel" id="signUp-tel" autocomplete="off" required>
+	  					<span></span>
+	  				</li>
+	  				<li class="signup-list">
+	  					<h5>관심주류</h5>
+	  					<div class="checklist">
+		  					<input type="checkbox" id="fav-whiskey" name="drink" value="위스키"><label for="fav-whiskey"><span class="circle"><span class="circle-choice"></span></span>위스키</label>
+		  					<input type="checkbox" id="fav-wine" name="drink" value="와인"><label for="fav-wine"><span class="circle"><span class="circle-choice"></span></span>와인</label>
+		  					<input type="checkbox" id="fav-beer" name="drink" value="맥주"><label for="fav-beer"><span class="circle"><span class="circle-choice"></span></span>맥주</label>
+		  					<input type="checkbox" id="fav-etc" name="drink" value="기타"><label for="fav-etc"><span class="circle"><span class="circle-choice"></span></span>기타</label>
+	  					</div>
+	  				</li>
+	  				
+	  				<li class="signup-list">
+	  					<h5>관리등급</h5>
+	  					<div class="checklist">
+		  					<input type="radio" id="lev-admin" name="level" value="관리자"><label for="lev-admin"><span class="circle"><span class="circle-choice"></span></span>관리자</label>
+		  					<input type="radio" id="lev-seller" name="level" value="판매자"><label for="lev-seller"><span class="circle"><span class="circle-choice"></span></span>판매자</label>
+		  					<input type="radio" id="lev-buyer" name="level" value="구매자"><label for="lev-buyer"><span class="circle"><span class="circle-choice"></span></span>구매자</label>
+	  					</div>
+	  				</li>
+	  			</ul>
+	  			<div class="signup-btn">
+	  				<button type="submit">회원가입</button>
+	  				<button type="reset" class="close-signup">취소</button>
+	  			</div>
+	  		</form>
+	  	</div>
+	  </div>
